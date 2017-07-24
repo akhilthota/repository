@@ -8,5 +8,6 @@ public class FirstartifactApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(FirstartifactApplication.class, args);
+		System.out.println("hello");
 	}
 }
