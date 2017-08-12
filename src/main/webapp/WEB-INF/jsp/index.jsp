@@ -11,8 +11,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/bootstrap-reset.css" rel="stylesheet">
 <!--external css-->
-<link href="assets/font-awesome/css/font-awesome.css"
-	rel="stylesheet" />
+<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
 <!--<link href="css/navbar-fixed-top.css" rel="stylesheet">-->
 
 <!-- Custom styles for this template -->
@@ -44,31 +43,33 @@
 				<!--logo end-->
 				<div class="horizontal-menu navbar-collapse collapse ">
 					<ul class="nav navbar-nav" style="color: white">
-						<li style="color: white"><a href="adminlogin.html">ADMIN</a></li>
-						<li class="dropdown"><a data-toggle="dropdown"
+						<!-- <li style="color: white"><a href="adminlogin.html">ADMIN</a></li> -->
+						<li style="color: white"><a href="registration">Register</a></li>
+						<li style="color: white"><a href="login">Login</a></li>
+						<!-- <li class="dropdown"><a data-toggle="dropdown"
 							data-hover="dropdown" class="dropdown-toggle" href="#">FACULTY
 								<b class=" fa fa-angle-down"></b>
 						</a>
 							<ul class="dropdown-menu">
-								<li><a href="registration1.html">Register</a></li>
-								<li><a href="login.html">Login</a></li>
+								<li><a href="registration">Register</a></li>
+								<li><a href="login">Login</a></li>
 							</ul></li>
 						<li class="dropdown"><a data-toggle="dropdown"
 							data-hover="dropdown" class="dropdown-toggle" href="#">STUDENTS
 								<b class=" fa fa-angle-down"></b>
 						</a>
 							<ul class="dropdown-menu">
-								<li><a href="registration1.html">Register</a></li>
-								<li><a href="login.html">Login</a></li>
+								<li><a href="registration">Register</a></li>
+								<li><a href="login">Login</a></li>
 							</ul></li>
 						<li class="dropdown"><a data-toggle="dropdown"
 							data-hover="dropdown" class="dropdown-toggle" href="#">PARENTS
 								<b class=" fa fa-angle-down"></b>
 						</a>
 							<ul class="dropdown-menu">
-								<li><a href="registration1.html">Register</a></li>
-								<li><a href="login.html">Login</a></li>
-							</ul></li>
+								<li><a href="/registration">Register</a></li>
+								<li><a href="/login">Login</a></li>
+							</ul></li> -->
 
 
 					</ul>
@@ -94,11 +95,11 @@
 				</div>
 				<!-- page start-->
 
-				
-					<h1 align="center"
-						style="word-spacing: 20px; letter-spacing: 10px; font-size: 40px; color: white; font-weight: 100px; margin-left: 30px; margin-right: 30px; padding-top: 180px; margin-top: -423px; padding-bottom: 170px; background-color: black; opacity: 0.7;">College
-						Feedback Management System</h1>
-				
+
+				<h1 align="center"
+					style="word-spacing: 20px; letter-spacing: 10px; font-size: 40px; color: white; font-weight: 100px; margin-left: 30px; margin-right: 30px; padding-top: 180px; margin-top: -423px; padding-bottom: 170px; background-color: black; opacity: 0.7;">College
+					Feedback Management System</h1>
+
 				<hr>
 				<br> <br>
 

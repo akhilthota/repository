@@ -11,18 +11,18 @@
     <title>Login</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/bootstrap-reset.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
-    <link href="../assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/style-responsive.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
     <!--[if lt IE 9]>
-    <script src="../js/html5shiv.js"></script>
-    <script src="../js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
 
@@ -30,7 +30,7 @@
 
     <div class="container" style="margin-top:50px;">
 
-    <fieldset>  <form class="form-signin" action="studentmain.html" style="z-index:1;opacity">
+    <fieldset>  <form class="form-signin" action="validateLogin" style="z-index:1;opacity">
         <h2 class="form-signin-heading" style="color:white">sign in now</h2>
         <div class="login-wrap">
             <input type="text" class="form-control" placeholder="User ID" autofocus>
@@ -46,7 +46,7 @@
            
            <br> <br><div class="registration">
                 Don't have an account yet?
-                <a class="" href="registration1.html">
+                <a class="" href="registration">
                     Create an account
                 </a><br><br>
             </div>
