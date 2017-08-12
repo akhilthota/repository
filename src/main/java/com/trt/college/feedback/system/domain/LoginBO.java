@@ -81,4 +81,11 @@ public class LoginBO {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "LoginBO [userName=" + userName + ", password=" + password + "]";
+	}
+	
+	
+
 }
