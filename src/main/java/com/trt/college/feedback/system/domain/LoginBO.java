@@ -10,7 +10,7 @@ import javax.validation.constraints.Size;
  * 		This class is a business object to hold the login info that the user
  *         provides. <br/>
  * 		<br/>
- *         Instead of submitting the from and then reading the values manually
+ *         Instead of submitting the form and then reading the values manually
  *         we assign this object to form tag in login.jsp. This is achieved by
  *         model-attribute. <br>
  * 		<br/>
