@@ -3,10 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Mosaddek">
-    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-    <link rel="shortcut icon" href="img/favicon.png">
+    
 
     <title>registration</title>
 
@@ -58,7 +55,7 @@
                                       </li>
                                   </ul>
                               </div>
-                              <form class="form-horizontal" id="default">
+                              <form class="form-horizontal" id="default" action="validateRegistration" method="post" modelAttribute="RegistrationBO" >
                                   <fieldset title="Step1" class="step" id="default-step-0">
                                       <legend> </legend>
                                       <div class="form-group">
@@ -126,7 +123,7 @@
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
-              2013 &copy; FlatLab by VectorLab.
+              2017 &copy cfms; 
               <a href="#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
