@@ -21,18 +21,13 @@ public class RegistrationController {
 		return new RegistrationBO();
 	}
 	
-	@RequestMapping(value = { "/index", "/" })
-	public String returnHome() {
-		return "index";
-	}
-	
-	
-	
 
-	@RequestMapping(value = "/registration", method = RequestMethod.GET)
+	@RequestMapping(value="/register")
 	public String returnRegistration() {
 		return "registration";
-	}
+	}	
+
+	
 	
 	@PostMapping(value = "/validateRegistration")
 	public String validateRegistration(@Valid RegistrationBO registration, BindingResult validationResult) {
