@@ -2,6 +2,7 @@ package com.trt.college.feedback.system.controller;
 
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,10 +11,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.trt.college.feedback.system.constants.CFMSViewConstants;
 import com.trt.college.feedback.system.domain.LoginBO;
+import com.trt.college.feedback.system.services.inf.LoginAndRegistrationService;
 
 @Controller
 public class LoginController {
+	
+	@Autowired
+	LoginAndRegistrationService loginService;
 
 	/**
 	 * The below annotation is mentioned in LoginBO.java to map it to form in
@@ -41,19 +47,14 @@ public class LoginController {
 	// Default http method is GET
 	@RequestMapping(value = { "/index", "/" })
 	public String returnHome() {
-		return "index";
+		return CFMSViewConstants.INDEX_VIEW;
 	}
-
-	// another way of doing as below. Not required to give method here
-	@GetMapping(value = "/registration")
-	public String returnRegistration() {
-		return "registration";
-	}
+	
 
 	// specify that the http method is GET
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String returnLogin() {
-		return "login";
+		return CFMSViewConstants.LOGIN_VIEW;
 	}
 
 	// You need to add a span in the jsp for the input attributes for showing
@@ -61,10 +62,10 @@ public class LoginController {
 	@PostMapping(value = "/validateLogin")
 	public String validateLogin(@Valid LoginBO login, BindingResult validationResult) {
 		if (validationResult.hasErrors()) {
-			return "login";
+			return CFMSViewConstants.LOGIN_VIEW;
 		}
-		System.out.println(login);
-		return "studenthome";
+		loginService.authenticateUser(login);
+		return CFMSViewConstants.STUDENT_HOME_VIEW;
 	}
 
 }
