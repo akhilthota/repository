@@ -35,7 +35,7 @@ public class LoginAndRegistrationDAOImpl implements LoginAndRegistrationDAO{
 
 	@Override
 	public boolean registerUser(RegistrationBO regBO) {
-		int updated=jdbcTemplate.update(INSERT_USER_QUERY, regBO.getUser(),regBO.getFullName());
+		int updated=jdbcTemplate.update(INSERT_USER_QUERY, regBO.getUserName(),regBO.getPassword());
 		// TODO Auto-generated method stub
 		return updated > 0 ? true : false;
 	}

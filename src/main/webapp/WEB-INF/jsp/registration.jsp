@@ -41,7 +41,7 @@
 
 				<section class="panel"
 					style="margin-left: -170px; margin-top: 50px;">
-						<h3>REGISTRATION</h3>
+					<h3>REGISTRATION</h3>
 					<div class="panel-body">
 						<div class="stepy-tab">
 							<ul id="default-titles" class="stepy-titles clearfix">
@@ -62,10 +62,17 @@
 							<fieldset title="Step1" class="step" id="default-step-0">
 								<legend> </legend>
 								<div class="form-group">
-									<label class="col-lg-2 control-label">Full Name</label>
+									<label class="col-lg-2 control-label">First Name</label>
 									<div class="col-lg-10">
 										<input type="text" class="form-control"
-											placeholder="Full Name">
+											placeholder="First Name">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-lg-2 control-label">Last Name</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control"
+											placeholder="Last Name">
 									</div>
 								</div>
 								<div class="form-group">
@@ -83,9 +90,27 @@
 							</fieldset>
 							<fieldset title="Step 2" class="step" id="default-step-1">
 								<legend> </legend>
-								<div class="form-group"></div>
-								<div class="form-group"></div>
-								<div class="form-group"></div>
+								<div class="form-group">
+									<label class="col-lg-2 control-label">Username</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control"
+											placeholder="Username">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-lg-2 control-label">Password</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control"
+											placeholder="Password">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-lg-2 control-label">Confirm Password</label>
+									<div class="col-lg-10">
+										<input type="text" class="form-control"
+											placeholder="Confirm Password">
+									</div>
+								</div>
 
 							</fieldset>
 							<fieldset title="Step 3" class="step" id="default-step-2">

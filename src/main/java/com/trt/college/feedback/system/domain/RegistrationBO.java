@@ -1,97 +1,55 @@
 package com.trt.college.feedback.system.domain;
 
-import java.util.Date;
+
 
 public class RegistrationBO {
 
-	private String fullName;
+	private String firstName;
+	private String lastName;
 	private String password;
-	private String user;
-	private String studentId;
-	private String email;
-	private String branch;
-	private int phone;
-	private Date dob;
-
-	public String getFullName() {
-		return fullName;
+	private String userName;
+	private String userType;
+	public String getFirstName() {
+		return firstName;
 	}
-
-	public void setFullName(String fullName) {
-		this.fullName = fullName;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
 	public String getPassword() {
 		return password;
 	}
-
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	public String getUser() {
-		return user;
+	public String getUserName() {
+		return userName;
 	}
-
-	public void setUser(String user) {
-		this.user = user;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
-
-	public String getStudentId() {
-		return studentId;
+	public String getUserType() {
+		return userType;
 	}
-
-	public void setStudentId(String studentId) {
-		this.studentId = studentId;
+	public void setUserType(String userType) {
+		this.userType = userType;
 	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getBranch() {
-		return branch;
-	}
-
-	public void setBranch(String branch) {
-		this.branch = branch;
-	}
-
-	public int getPhone() {
-		return phone;
-	}
-
-	public void setPhone(int phone) {
-		this.phone = phone;
-	}
-
-	public Date getDob() {
-		return dob;
-	}
-
-	public void setDob(Date dob) {
-		this.dob = dob;
-	}
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((branch == null) ? 0 : branch.hashCode());
-		result = prime * result + ((dob == null) ? 0 : dob.hashCode());
-		result = prime * result + ((email == null) ? 0 : email.hashCode());
-		result = prime * result + ((fullName == null) ? 0 : fullName.hashCode());
+		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
+		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
-		result = prime * result + phone;
-		result = prime * result + ((studentId == null) ? 0 : studentId.hashCode());
-		result = prime * result + ((user == null) ? 0 : user.hashCode());
+		result = prime * result + ((userName == null) ? 0 : userName.hashCode());
+		result = prime * result + ((userType == null) ? 0 : userType.hashCode());
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -101,50 +59,40 @@ public class RegistrationBO {
 		if (getClass() != obj.getClass())
 			return false;
 		RegistrationBO other = (RegistrationBO) obj;
-		if (branch == null) {
-			if (other.branch != null)
+		if (firstName == null) {
+			if (other.firstName != null)
 				return false;
-		} else if (!branch.equals(other.branch))
+		} else if (!firstName.equals(other.firstName))
 			return false;
-		if (dob == null) {
-			if (other.dob != null)
+		if (lastName == null) {
+			if (other.lastName != null)
 				return false;
-		} else if (!dob.equals(other.dob))
-			return false;
-		if (email == null) {
-			if (other.email != null)
-				return false;
-		} else if (!email.equals(other.email))
-			return false;
-		if (fullName == null) {
-			if (other.fullName != null)
-				return false;
-		} else if (!fullName.equals(other.fullName))
+		} else if (!lastName.equals(other.lastName))
 			return false;
 		if (password == null) {
 			if (other.password != null)
 				return false;
 		} else if (!password.equals(other.password))
 			return false;
-		if (phone != other.phone)
-			return false;
-		if (studentId == null) {
-			if (other.studentId != null)
+		if (userName == null) {
+			if (other.userName != null)
 				return false;
-		} else if (!studentId.equals(other.studentId))
+		} else if (!userName.equals(other.userName))
 			return false;
-		if (user == null) {
-			if (other.user != null)
+		if (userType == null) {
+			if (other.userType != null)
 				return false;
-		} else if (!user.equals(other.user))
+		} else if (!userType.equals(other.userType))
 			return false;
 		return true;
-
 	}
-
+	
 	@Override
 	public String toString() {
-		return "RegistrationBO [fullName=" + fullName + ", password=" + password + ", user=" + user + ", studentId="
-				+ studentId + ", email=" + email + ", branch=" + branch + ", phone=" + phone + ", dob=" + dob + "]";
+		return "RegistrationBO [firstName=" + firstName + ", lastName=" + lastName + ", password=" + password
+				+ ", userName=" + userName + ", userType=" + userType + "]";
 	}
+	
+
+
 }

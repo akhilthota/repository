@@ -1,7 +1,6 @@
 package com.trt.college.feedback.system.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.trt.college.feedback.system.dao.inf.LoginAndRegistrationDAO;
@@ -26,7 +25,7 @@ public class LoginAndRegistrationServiceImpl implements LoginAndRegistrationServ
 
 	@Override
 	public boolean registerUser(RegistrationBO regBO) {
-		LoginBO loginBO=loginDAO.fetchUser(regBO.getUser());
+		LoginBO loginBO=loginDAO.fetchUser(regBO.getUserName());
 		if(loginBO==null){
 			return loginDAO.registerUser(regBO);
 		}

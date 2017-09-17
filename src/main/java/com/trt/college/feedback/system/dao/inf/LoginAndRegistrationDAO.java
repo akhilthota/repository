@@ -5,8 +5,8 @@ import com.trt.college.feedback.system.domain.RegistrationBO;
 
 public interface LoginAndRegistrationDAO {
 	
-	final String FETCH_USER_QUERY="SELECT USERNAME, PASSWORD FROM USERS";
-	final String INSERT_USER_QUERY="";
+	final String FETCH_USER_QUERY="SELECT USERNAME, PASSWORD FROM USER";
+	final String INSERT_USER_QUERY="INSERT INTO USER";
 
 	LoginBO fetchUser(String userName);
 	
